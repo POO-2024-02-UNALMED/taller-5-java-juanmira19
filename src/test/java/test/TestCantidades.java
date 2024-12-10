@@ -107,4 +107,8 @@ public class TestCantidades {
 		}
 		assertTrue(ok, "Hay un problema con el conteo de salmones o bacalaos");
     }
+	public static void main(String[] args) {
+		System.out.println(zoo.cantidadTotalAnimales());
+		
+	}
 }

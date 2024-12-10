@@ -15,6 +15,7 @@ public class Animal {
     }
 
 
+
     public Animal(String nombre,int edad,String habitat,String genero){
         this();
         this.nombre=nombre;
@@ -23,16 +24,6 @@ public class Animal {
         this.genero=genero;
 
 
-    }
-
-    public Animal(int totalAnimales,String nombre,int edad,String habitat,String genero,Zona[] zona){
-        this();
-        this.nombre=nombre;
-        this.edad=edad;
-        this.habitat=habitat;
-        this.genero=genero;
-        this.zona=zona;
-        
     }
 
     public String movimiento(){
@@ -45,7 +36,7 @@ public class Animal {
 				"Aves: "+ Ave.cantidadAves+"\n" + 
 				"Reptiles: "+Reptil.cantidadReptiles+"\n" + 
 				"Peces: "+Pez.cantidadPeces+"\n" + 
-				"Anfibios: "+Reptil.cantidadReptiles;
+				"Anfibios: "+Anfibio.cantidadAnfibios;
         
 
 

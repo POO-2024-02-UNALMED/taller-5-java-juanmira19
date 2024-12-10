@@ -9,7 +9,7 @@ public class Anfibio extends Animal{
     public static int salamandras=0;
     private String colorPiel="None";
     private boolean venenoso=false;
-    public static int cantidadAnfibios;
+    public static int cantidadAnfibios=0;
 
     public Anfibio(){
         super("nombre",0,"habitat","genero");
@@ -17,15 +17,6 @@ public class Anfibio extends Animal{
 
     }
 
-    public Anfibio(int totalAnimales,String nombre,int edad,String habitat,String genero,Zona[] zona,Anfibio[] listado,int ranas,int salamandras,String colorPiel , boolean venenoso){
-        super(totalAnimales,nombre,edad,habitat,genero,zona);
-        this.listado=listado;
-        Anfibio.ranas=ranas;
-        Anfibio.salamandras=salamandras;
-        this.colorPiel=colorPiel;
-        this.venenoso=venenoso;
-        cantidadAnfibios++;
-    }
     public Anfibio(String nombre,int edad,String habitat,String genero, String color,boolean venenoso){
         super(nombre,edad,habitat,genero);
         this.colorPiel=color;

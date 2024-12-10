@@ -24,15 +24,7 @@ public class Ave extends Animal{
     }
 
     
-    public Ave(int totalAnimales,String nombre,int edad,String habitat,String genero,Zona[] zona,Ave[] listado,int halcones,int aguilas,String colorPlumas){
-        super(totalAnimales,nombre,edad,habitat,genero,zona);
-        this.listado=listado;
-        Ave.halcones=halcones;
-        Ave.aguilas=aguilas;
-        this.colorPlumas=colorPlumas;
-        cantidadAves++;
 
-    }
 
     public int cantidadAves(){
         return cantidadAves;
