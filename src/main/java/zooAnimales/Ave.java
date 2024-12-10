@@ -11,12 +11,14 @@ public class Ave extends Animal{
     public static int cantidadAves;
 
     public Ave(){
+        super("nombre",3,"habitat","genero");
         cantidadAves++;
 
     }
     public Ave(String nombre,int edad,String habitat,String genero, String color){
         super(nombre,edad,habitat,genero);
         this.colorPlumas=color;
+        cantidadAves++;
 
 
     }
@@ -32,7 +34,8 @@ public class Ave extends Animal{
 
     }
 
-    public void cantidadAves(){
+    public int cantidadAves(){
+        return cantidadAves;
 
     }
 

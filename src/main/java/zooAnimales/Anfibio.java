@@ -5,13 +5,14 @@ import gestion.Zona;
 public class Anfibio extends Animal{
 
     private Anfibio[] listado;
-    public static int ranas;
-    public static int salamandras;
-    private String colorPiel;
-    private boolean venenoso;
+    public static int ranas=0;
+    public static int salamandras=0;
+    private String colorPiel="None";
+    private boolean venenoso=false;
     public static int cantidadAnfibios;
 
     public Anfibio(){
+        super("nombre",0,"habitat","genero");
         cantidadAnfibios++;
 
     }
@@ -29,11 +30,14 @@ public class Anfibio extends Animal{
         super(nombre,edad,habitat,genero);
         this.colorPiel=color;
         this.venenoso=venenoso;
+        cantidadAnfibios++;
 
     }
 
-    public void cantidadAnfibios(){
+    public int cantidadAnfibios(){
+        return cantidadAnfibios;
         
+
     }
 
     public String movimiento(){
@@ -82,7 +86,7 @@ public class Anfibio extends Animal{
     public void setVenenoso(boolean venenoso) {
         this.venenoso = venenoso;
     }
-    public boolean getlVenenoso() {
+    public boolean isVenenoso() {
         return venenoso;
     }
 }

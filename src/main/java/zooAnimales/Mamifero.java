@@ -6,15 +6,16 @@ public class Mamifero extends Animal {
 
 
     private Mamifero[] listado;
-    public static int caballos;
-    public static int leones;
-    private Boolean pelaje;
-    private int patas;
-    public static int cantidadMamiferos;
+    public static int caballos=0;
+    public static int leones=0;
+    private Boolean pelaje=false;
+    private int patas=0;
+    public static int cantidadMamiferos=0;
 
 
 
     public Mamifero(){
+        super("nombre",3,"habitat","genero");
         cantidadMamiferos++;
     
     }
@@ -33,11 +34,15 @@ public class Mamifero extends Animal {
         super(nombre,edad,habitat,genero);
         this.pelaje=pelaje;
         this.patas=patas;
+        cantidadMamiferos++;
+    
 
     }
 
 
-    public void cantidadMamiferos(){
+    public int cantidadMamiferos(){
+        return cantidadMamiferos;
+    
         
 
     }
@@ -79,7 +84,7 @@ public class Mamifero extends Animal {
     public void setPelaje(Boolean pelaje) {
         this.pelaje = pelaje;
     }
-    public Boolean getPelaje() {
+    public Boolean isPelaje() {
         return pelaje;
     }
 

@@ -3,10 +3,10 @@ import gestion.*;
 
 public class Animal {
     private static int totalAnimales;
-    private String nombre;
-    private int edad;
-    private String habitat;
-    private String genero;
+    private String nombre="None";
+    private int edad=0;
+    private String habitat="None";
+    private String genero="None";
     private Zona[] zona;
 
     public Animal(){

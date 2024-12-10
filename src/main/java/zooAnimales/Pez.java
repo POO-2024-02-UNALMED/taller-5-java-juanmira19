@@ -12,6 +12,7 @@ public class Pez extends Animal{
     public static int cantidadPeces;
 
     public Pez(){
+        super("nombre",3,"habitat","genero");
         cantidadPeces++;
         
 
@@ -30,11 +31,13 @@ public class Pez extends Animal{
         super(nombre,edad,habitat,genero);
         this.colorEscamas=colorEscamas;
         this.cantidadAletas=cantidadAletas;
+        cantidadPeces++;
 
 
     }
 
-    public void cantidadPeces(){
+    public int cantidadPeces(){
+        return cantidadPeces;
         
     }
 

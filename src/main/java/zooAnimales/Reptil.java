@@ -12,6 +12,7 @@ public class Reptil extends Animal {
     public static int cantidadReptiles;
 
     public Reptil(){
+        super("nombre",3,"habitat","genero");
         cantidadReptiles++;
     
     }
@@ -26,8 +27,15 @@ public class Reptil extends Animal {
         cantidadReptiles++;
 
     }
+    public Reptil(String nombre,int edad,String habitat,String genero,String colorEscamas,int largoCola){
+        super(nombre,edad,habitat,genero);
+        this.colorEscamas=colorEscamas;
+        this.largoCola=largoCola;
+        cantidadReptiles++;
+    }
 
-    public void cantidadReptiles(){
+    public int cantidadReptiles(){
+        return cantidadReptiles;
         
     }
 

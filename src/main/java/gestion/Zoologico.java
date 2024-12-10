@@ -17,6 +17,11 @@ public class Zoologico {
         this.zonas=zonas;
 
     }
+    
+    public Zoologico(String nombre, String ubicacion){
+        this.nombre=nombre;
+        this.ubicacion=ubicacion;
+    }
 
     public void agregarZonas(Zona zona) {
         Zona[] nuevoArray = new Zona[zonas.length + 1];
@@ -58,11 +63,11 @@ public class Zoologico {
 
     //Metodos para Zonas
 
-    public Zona[] getZonas() {
+    public Zona[] getZona() {
         return zonas;
     }
 
-    public void setZonas(Zona[] zonas) {
+    public void setZona(Zona[] zonas) {
         this.zonas = zonas;
     }
 
