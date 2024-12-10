@@ -59,7 +59,7 @@ public class Ave extends Animal{
         aguilas++;
         Ave M=new Ave();
         M.setColorPlumas("blanco y amarillo ");
-        M.setHabitat("montañas");
+        M.setHabitat("montanñs");
         M.setNombre(nombre);
         M.setEdad(edad);
         M.setGenero(genero);
